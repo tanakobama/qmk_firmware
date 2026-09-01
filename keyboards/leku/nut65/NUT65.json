@@ -1,5 +1,5 @@
 {
-  "name": "NUT65",
+  "name": "Key65",
   "vendorId": "0x342d",
   "productId": "0Xe51a",
   "keycodes": ["qmk_lighting"],
@@ -98,15 +98,12 @@
     {"name": "L_TOG",   "title": "L_TOG", "shortName": "L_TOG"},
     {"name": "Indicator LED On/Off",   "title": "Indicator LED On/Off", "shortName": "LED_TOG"},
     {"name": "Latency mode change",   "title": "Latency mode change", "shortName": "DEB_TOG"},
-    {"name": "Display test white",   "title": "Display test white", "shortName": "KC_TESTW"},
+    {"name": "display test white",   "title": "display test white", "shortName": "KC_TESTW"},
     {"name": "System mode switching",   "title": "System mode switching", "shortName": "SYS_CUT"},
     {"name": "Side light mode switch",   "title": "Side light mode switch", "shortName": "RL_MOD"},
     {"name": "Music mode switch",   "title": "Music mode switch", "shortName": "MUS_CUT"},
-    {"name": "Musical groove calibration",   "title": "Musical groove calibration", "shortName": "MUS_STA"},
     {"name": "Frequency test",   "title": "Frequency test", "shortName": "FREQU_T"},
-    {"name": "Bluetooth no secret pairing channel",   "title": "Bluetooth no secret pairing channel", "shortName": "BT_TEST"},
-    {"name": "Side light Add",   "title": "Side light Add", "shortName": "RL_VAI"},
-    {"name": "Side light Subtract",   "title": "Side light Subtract", "shortName": "RL_VAD"}
+    {"name": "Bluetooth no secret pairing channel",   "title": "Bluetooth no secret pairing channel", "shortName": "BT_TEST"}
   ],
   "layouts": {
       "keymap":

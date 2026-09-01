@@ -3,6 +3,7 @@
 
 #pragma once
 
+
 #define USB_POWER_EN_PIN                    B1 // USB ENABLE pin
 #define LED_POWER_EN_PIN                    A8 // LED ENABLE pin
 #define HS_BAT_CABLE_PIN                    A7 // USB insertion detection pin
@@ -13,10 +14,10 @@
 
 // #define MM_BT_DEF_PIN                       C15
 // #define MM_2G4_DEF_PIN                      C14
-#define MD_BT1_NAME                         "NUT65 BT1"
-#define MD_BT2_NAME                         "NUT65 BT2"
-#define MD_BT3_NAME                         "NUT65 BT3"
-#define MD_DONGLE_PRODUCT                   "NUT65 2.4G Wireless"
+#define MD_BT1_NAME                         "KEY65 BT1"
+#define MD_BT2_NAME                         "KEY65 BT2"
+#define MD_BT3_NAME                         "KEY65 BT3"
+#define MD_DONGLE_PRODUCT                   "KEY65 2.4G Wireless"
 
 /* Device Connection RGB Indicator Light Index And Color */
 #define HS_RGB_BLINK_INDEX_BT1              4

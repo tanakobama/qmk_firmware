@@ -12,6 +12,14 @@ enum layers {
     _DEFA, 
 };
 
+//Key Override 
+const key_override_t delete_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_BSPC, KC_DEL);
+
+// Register the override globally
+const key_override_t *key_overrides[] = {
+    &delete_key_override
+};
+
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BL] = LAYOUT( /* win Base */
