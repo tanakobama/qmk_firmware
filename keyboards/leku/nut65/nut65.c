@@ -13,6 +13,8 @@
 #    include "rgb_matrix_blink.h"
 #endif
 
+static uint16_t f_timer;
+
 enum layers {
     _BL = 0,
     _FL,
@@ -755,6 +757,18 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 no_record_fg = true;
             }
             break;
+        }
+        case KC_F: {
+            if (record->event.pressed) {
+
+                if (IS_LAYER_ON(1) && timer_elapsed(f_timer) < 250) {
+                    SEND_STRING(SS_TAP(X_BSPC) SS_LSFT(SS_TAP(X_END)) SS_TAP(X_DEL));
+                    f_timer = 0;
+                    return false;
+                }
+
+                f_timer = timer_read();
+            }
         }
         case RP_END:
         case RP_P0:
@@ -1696,7 +1710,7 @@ bool rgb_matrix_indicators_advanced_kb(uint8_t led_min, uint8_t led_max) {
     if (start_paoma_flag) {
         static uint8_t led_start = 0;
         if (led_start < (RGB_MATRIX_LED_COUNT - RGBLED_NUM - WINDOW_SIZE)) {
-            rgb_matrix_set_color_all(0x00, 0x00, 0x00); // ÇåÆÁ
+            rgb_matrix_set_color_all(0x00, 0x00, 0x00); // ï¿½ï¿½ï¿½ï¿½
             static uint32_t time_delay = 0;
             if (timer_elapsed32(time_delay) > DELAY_TIME) {
                 time_delay = timer_read32();
